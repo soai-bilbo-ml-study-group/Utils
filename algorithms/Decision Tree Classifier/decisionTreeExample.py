@@ -11,7 +11,7 @@ from sklearn import tree
 from sklearn.metrics import accuracy_score
 
 # Importing the dataset
-dataset = pd.read_csv('Data.csv') #Importing the CSV 
+dataset = pd.read_csv('data.csv') #Importing the CSV 
 
 dataset.Age.fillna(round(dataset.Age.mean(),0),inplace=True)
 dataset.Salary.fillna(round(dataset.Salary.mean(),0),inplace=True)
